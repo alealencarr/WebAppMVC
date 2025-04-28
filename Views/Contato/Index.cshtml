@@ -1,0 +1,57 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+<h1 class="display-4" >Listagem de Contatos</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Mark@gmail.com</td>
+            <td>11 92202-0090</td>
+            <td>
+                <div class="btn-group" role="group" >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Jacob@gmail.com</td>
+            <td>11 92202-0090</td>
+            <td>
+                <div class="btn-group" role="group"  >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>John@gmail.com</td>
+            <td>11 92202-0090</td>
+            <td>
+                <div class="btn-group" role="group"  >
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

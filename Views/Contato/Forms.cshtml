@@ -1,0 +1,23 @@
+﻿<form>
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" placeholder="Digite o nome do contato" pattern="[A-Z\s]">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" placeholder="Digite o e-mail do contato">
+    </div>
+
+
+    <div class="form-group">
+        <label for="celular">Celular</label>
+        <input type="text" class="form-control" placeholder="Digite o celular do contato" pattern="[0-9]{5}-[0-9]{3}">
+    </div>
+    <br />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-secondary" role="button" asp-controller="Contato" asp-action="index">Voltar</a>
+    </div>
+</form>
+

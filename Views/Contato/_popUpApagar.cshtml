@@ -1,9 +1,9 @@
-﻿<div class="modal fade" id="popUpApagar" tabindex="-1">
+﻿<div class="modal fade" id="popUpApagar" tabindex="-1"  >
     <div class="modal-dialog">
         <div class="modal-content p-3">
             <div class="modal-header">
                 <h5 class="modal-title">Apagar Contato</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button id="btn_close" type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
@@ -12,8 +12,8 @@
                         <h3>Deseja realmente apagar este Contato?</h3>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Sim</button>
-                        <button type="button" class="btn btn-warning">Cancelar</button>
+                        <button type="button" class="btn btn-primary" asp-controller="Contato" asp-action="Apagar">Sim</button>
+                        <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cancelar</button>
                     </div>
                 </div>
             </div>

@@ -3,43 +3,43 @@
   "WorkspaceRootPath": "C:\\WebAppMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\_popupapagar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\_popupapagar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\contato\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\contato\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista\\Views\\Cliente\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\models\\contatomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:models\\contatomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleal\\OneDrive\\\u00C1rea de Trabalho\\algni_solution\\algni_solution\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,128 +73,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista\\Views\\Cliente\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista\\Views\\Cliente\\Index.cshtml",
-              "ToolTip": "C:\\FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista\\Views\\Cliente\\Index.cshtml",
-              "RelativeToolTip": "..\\FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista\\Views\\Cliente\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "DocumentIndex": 0,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contato\\Index1.cshtml",
+              "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\Index1.cshtml",
+              "RelativeToolTip": "Views\\Contato\\Index1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-30T01:17:26.352Z",
+              "WhenOpened": "2025-05-04T04:09:49.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contato\\Editar.cshtml",
+              "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Contato\\Editar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T04:07:24.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_popUpApagar.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\_popUpApagar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Contato\\_popUpApagar.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\_popUpApagar.cshtml",
-              "RelativeToolTip": "Views\\Contato\\_popUpApagar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-30T01:10:37.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Forms.cshtml",
               "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\Forms.cshtml",
               "RelativeDocumentMoniker": "Views\\Contato\\Forms.cshtml",
               "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\Forms.cshtml",
               "RelativeToolTip": "Views\\Contato\\Forms.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T00:51:43.858Z",
+              "WhenOpened": "2025-05-04T04:02:25.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Contato\\Index.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\Index.cshtml",
-              "RelativeToolTip": "Views\\Contato\\Index.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEUAAAAVAAAA",
+              "DocumentIndex": 1,
+              "Title": "Criar.cshtml",
+              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Contato\\Criar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contato\\Criar.cshtml",
+              "ToolTip": "C:\\WebAppMVC\\Views\\Contato\\Criar.cshtml",
+              "RelativeToolTip": "Views\\Contato\\Criar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T01:22:12.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContatoController.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Controllers\\ContatoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContatoController.cs",
-              "ToolTip": "C:\\WebAppMVC\\Controllers\\ContatoController.cs",
-              "RelativeToolTip": "Controllers\\ContatoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T01:21:57.043Z",
+              "WhenOpened": "2025-05-04T04:01:15.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T00:54:28.237Z"
+              "Title": "ContatoController.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Controllers\\ContatoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContatoController.cs",
+              "ToolTip": "C:\\WebAppMVC\\Controllers\\ContatoController.cs",
+              "RelativeToolTip": "Controllers\\ContatoController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwCUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T03:53:55.751Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HomeModel.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Models\\HomeModel.cs",
-              "RelativeDocumentMoniker": "Models\\HomeModel.cs",
-              "ToolTip": "C:\\WebAppMVC\\Models\\HomeModel.cs",
-              "RelativeToolTip": "Models\\HomeModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Title": "ContatoModel.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Models\\ContatoModel.cs",
+              "RelativeDocumentMoniker": "Models\\ContatoModel.cs",
+              "ToolTip": "C:\\WebAppMVC\\Models\\ContatoModel.cs",
+              "RelativeToolTip": "Models\\ContatoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T00:58:33.061Z"
+              "WhenOpened": "2025-05-04T03:53:49.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\aleal\\OneDrive\\\u00C1rea de Trabalho\\algni_solution\\algni_solution\\Web.config",
+              "RelativeDocumentMoniker": "..\\Users\\aleal\\OneDrive\\\u00C1rea de Trabalho\\algni_solution\\algni_solution\\Web.config",
+              "ToolTip": "C:\\Users\\aleal\\OneDrive\\\u00C1rea de Trabalho\\algni_solution\\algni_solution\\Web.config",
+              "RelativeToolTip": "..\\Users\\aleal\\OneDrive\\\u00C1rea de Trabalho\\algni_solution\\algni_solution\\Web.config",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-04T03:35:07.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\WebAppMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\WebAppMVC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T03:13:24.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\WebAppMVC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\WebAppMVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAUAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA8AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T00:45:07.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T00:36:38.852Z"
+              "WhenOpened": "2025-05-04T03:06:43.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\WebAppMVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA/AAAA",
+              "Title": "BancoContext.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Data\\BancoContext.cs",
+              "RelativeDocumentMoniker": "Data\\BancoContext.cs",
+              "ToolTip": "C:\\WebAppMVC\\Data\\BancoContext.cs",
+              "RelativeToolTip": "Data\\BancoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T00:31:04.562Z"
+              "WhenOpened": "2025-05-04T02:56:32.857Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,8 +1,20 @@
-var builder = WebApplication.CreateBuilder(args);
+using WebAppMVC.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using WebAppMVC.Repositorio;
 
+
+var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ConexaoLocal");
 // Add services to the container.
-builder.Services.AddControllersWithViews() 
+builder
+    .Services
+    .AddControllersWithViews() 
     .AddRazorRuntimeCompilation();
+
+builder.Services.AddDbContext<BancoContext>(x => x.UseSqlServer(connectionString));
+builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+
 
 var app = builder.Build();
 

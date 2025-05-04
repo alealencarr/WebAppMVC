@@ -8,7 +8,17 @@
     function abrirPopup() {
         
          $('#popUpApagar').modal('show');
+
+         
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener('hide.bs.modal', function (event) {
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        });
+    });
 
  </script>
 

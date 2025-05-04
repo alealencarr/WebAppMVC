@@ -2,3 +2,73 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+function ModalDialogWithContent(title, content) {
+    const isSuccess = title === "Sucesso!";
+    const randomId = 'modal_' + Math.random().toString().replace('.', '');
+
+    const dialog = `
+        <div id="${randomId}" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header ${isSuccess ? 'bg-success text-white' : 'bg-danger text-white'}">
+                        <h5 class="modal-title">${title}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert ${isSuccess ? 'alert-success' : 'alert-danger'}" role="alert">
+                            ${content}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    $('body').append(dialog);
+    const modal = new bootstrap.Modal(document.getElementById(randomId));
+    modal.show();
+
+    // Remove o modal da DOM ao fechar
+    $(`#${randomId}`).on('hidden.bs.modal', function () {
+        $(this).remove();
+    });
+}
+
+function ModalDialog(type, text) {
+    let title = (type === "Success") ? "Sucesso!" : "Erro";
+    ModalDialogWithContent(title, `<p>${text}</p>`);
+}
+$('#dtgDados').DataTable({
+    "ordering": true,
+    "paging": true,
+    "searching": true,
+    "oLanguage": {
+        "sEmptyTable": "Nenhum registro encontrado na tabela",
+        "sInfo": "Mostrar _START_ até _END_ de _TOTAL_ registros",
+        "sInfoEmpty": "Mostrar 0 até 0 de 0 Registros",
+        "sInfoFiltered": "(Filtrar de _MAX_ total registros)",
+        "sInfoPostFix": "",
+        "sInfoThousands": ".",
+        "sLengthMenu": "Mostrar _MENU_ registros por pagina",
+        "sLoadingRecords": "Carregando...",
+        "sProcessing": "Processando...",
+        "sZeroRecords": "Nenhum registro encontrado",
+        "sSearch": "Pesquisar",
+        "oPaginate": {
+            "sNext": "Proximo",
+            "sPrevious": "Anterior",
+            "sFirst": "Primeiro",
+            "sLast": "Ultimo"
+        },
+        "oAria": {
+            "sSortAscending": ": Ordenar colunas de forma ascendente",
+            "sSortDescending": ": Ordenar colunas de forma descendente"
+        }
+    }
+});
+
+

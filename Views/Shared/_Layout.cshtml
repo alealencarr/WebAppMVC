@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebAppMVC.styles.css" asp-append-version="true" />
+    <link href="https://cdn.datatables.net/v/dt/dt-2.3.0/datatables.min.css" rel="stylesheet" integrity="sha384-b6zpX2e8uzvhWek1oBTKdifu88SXYijvZlp44itAjiEbD8ic6XRiVFQ9F6u4gspj" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -44,7 +45,10 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.0/datatables.min.js" integrity="sha384-AFcRPcI5tCh/IuCki8nD5IrM9bWey0NmCM+Gyq+zHDmYZq9QlZ418kOdfglyNTWt" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html> 

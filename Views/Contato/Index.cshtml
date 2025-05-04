@@ -1,12 +1,20 @@
-﻿@model ContatoModel
+﻿@model List<ContatoModel>
 @{
     ViewData["Title"] = "Listagem de Contatos";
 }
+
+
+ 
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  <script>
 
-    function abrirPopup() {
+    function abrirPopup(id, nome) {
         
+        document.getElementById('idParaExcluir').value = id;
+        document.getElementById('input_texto_contato').textContent = "Deseja realmente apagar o contato ("+nome+")?";
+        
+
          $('#popUpApagar').modal('show');
 
          
@@ -24,14 +32,27 @@
 
 
 <div class="text-center">
+
+    @if (TempData["MessageText"] != null)
+    {
+        var msg = TempData["MessageText"];
+        var type = TempData["MessageType"];
+
+        <script>
+            window.onload = function () {
+                ModalDialog('@type', '@msg');
+            };
+        </script>
+    }
+
     <h1 class="display-4"  >Listagem de Contatos</h1>
     
     <div class="text-center">
         <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar</a>
 
     </div>
-
-    <table class="table">
+    <div id="hiddenApagar"></div>
+    <table id="dtgDados" class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -41,45 +62,28 @@
                 <th scope="col">Ações</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Mark@gmail.com</td>
-                <td>11 92202-0090</td>
-                <td>
-                    <div class="btn-group" role="group" >
-                        <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
-                        <button role="button" class="btn btn-danger" onclick="javascript:abrirPopup();">Apagar</button>
-                        <div id="hiddenApagar"></div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Jacob@gmail.com</td>    
-                <td>11 92202-0090</td>
-                <td>
-                    <div class="btn-group" role="group"  >
-                        <a role="button" class="btn btn-primary">Editar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>John</td>
-                <td>John@gmail.com</td>
-                <td>11 92202-0090</td>
-                <td>
-                    <div class="btn-group" role="group"  >
-                        <a role="button" class="btn btn-primary">Editar</a>
-                        <a role="button" class="btn btn-danger">Apagar</a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
+
+        @if (Model != null && Model.Any())
+        {
+            foreach(ContatoModel contato in Model)
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row">@contato.Id</th>
+                        <td>@contato.Nome</td>
+                        <td>@contato.Email</td>
+                        <td>@contato.Celular</td>
+                        <td>
+                            <div class="btn-group" role="group" >
+                                <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id">Editar</a>
+                                <button role="button" class="btn btn-danger" onclick="javascript:abrirPopup(@contato.Id,'@contato.Nome');">Apagar</button>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            }
+        }
     </table>
 </div>
 

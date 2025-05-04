@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Contato\Criar.cshtml" />
     <Content Remove="Views\Contato\_popUpApagar.cshtml" />
   </ItemGroup>
 
@@ -24,16 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Contato\Criar.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Contato\Criar.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Contato\_popUpApagar.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Contato\Criar.cshtml" />
     <None Include="Views\Contato\_popUpApagar.cshtml" />
   </ItemGroup>
 

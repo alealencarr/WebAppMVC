@@ -62,12 +62,12 @@
                 <th scope="col">Ações</th>
             </tr>
         </thead>
-
+        <tbody>
         @if (Model != null && Model.Any())
         {
             foreach(ContatoModel contato in Model)
             {
-                <tbody>
+            
                     <tr>
                         <th scope="row">@contato.Id</th>
                         <td>@contato.Nome</td>
@@ -81,9 +81,16 @@
                             </div>
                         </td>
                     </tr>
-                </tbody>
+
+                }
             }
-        }
+            else
+            {
+                <tr class="odd">
+                    <td valign="top" colspan="5">Nenhum contato encontrado</td>
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
 

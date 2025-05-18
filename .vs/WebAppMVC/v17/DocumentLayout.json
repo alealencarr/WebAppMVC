@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\WebAppMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\helper\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:helper\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\viewcomponents\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:viewcomponents\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\shared\\components\\menu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\shared\\components\\menu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\shared\\_layoutdeslogado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\shared\\_layoutdeslogado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\helper\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:helper\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\helper\\isessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:helper\\isessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:repositorio\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\repositorio\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:repositorio\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|c:\\webappmvc\\helper\\iemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0149CCA1-6043-4FD8-98B8-0B25F6328FD2}|WebAppMVC.csproj|solutionrelative:helper\\iemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioRepositorio.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Repositorio\\UsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\UsuarioRepositorio.cs",
+              "ToolTip": "C:\\WebAppMVC\\Repositorio\\UsuarioRepositorio.cs",
+              "RelativeToolTip": "Repositorio\\UsuarioRepositorio.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvyoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T18:09:42.14Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -82,158 +75,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\ViewComponents\\Menu.cs",
-              "RelativeDocumentMoniker": "ViewComponents\\Menu.cs",
-              "ToolTip": "C:\\WebAppMVC\\ViewComponents\\Menu.cs",
-              "RelativeToolTip": "ViewComponents\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T06:11:33.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T06:09:15.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Shared\\Components\\Menu\\Default.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Components\\Menu\\Default.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Shared\\Components\\Menu\\Default.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Components\\Menu\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T06:09:02.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_LayoutDeslogado.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Shared\\_LayoutDeslogado.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutDeslogado.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Shared\\_LayoutDeslogado.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LayoutDeslogado.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T06:07:44.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\WebAppMVC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\WebAppMVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:57:31.909Z",
+              "WhenOpened": "2025-05-18T18:01:11.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\WebAppMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\WebAppMVC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T17:52:36.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Helper\\Email.cs",
+              "RelativeDocumentMoniker": "Helper\\Email.cs",
+              "ToolTip": "C:\\WebAppMVC\\Helper\\Email.cs",
+              "RelativeToolTip": "Helper\\Email.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T17:51:52.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Sessao.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Helper\\Sessao.cs",
-              "RelativeDocumentMoniker": "Helper\\Sessao.cs",
-              "ToolTip": "C:\\WebAppMVC\\Helper\\Sessao.cs",
-              "RelativeToolTip": "Helper\\Sessao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Title": "IEmail.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Helper\\IEmail.cs",
+              "RelativeDocumentMoniker": "Helper\\IEmail.cs",
+              "ToolTip": "C:\\WebAppMVC\\Helper\\IEmail.cs",
+              "RelativeToolTip": "Helper\\IEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:50:13.091Z",
+              "WhenOpened": "2025-05-18T17:51:05.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ISessao.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Helper\\ISessao.cs",
-              "RelativeDocumentMoniker": "Helper\\ISessao.cs",
-              "ToolTip": "C:\\WebAppMVC\\Helper\\ISessao.cs",
-              "RelativeToolTip": "Helper\\ISessao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:48:53.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Models\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "Models\\UsuarioModel.cs",
-              "ToolTip": "C:\\WebAppMVC\\Models\\UsuarioModel.cs",
-              "RelativeToolTip": "Models\\UsuarioModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:40:26.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IUsuarioRepositorio.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Repositorio\\IUsuarioRepositorio.cs",
-              "RelativeDocumentMoniker": "Repositorio\\IUsuarioRepositorio.cs",
-              "ToolTip": "C:\\WebAppMVC\\Repositorio\\IUsuarioRepositorio.cs",
-              "RelativeToolTip": "Repositorio\\IUsuarioRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:37:13.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsuarioRepositorio.cs",
-              "DocumentMoniker": "C:\\WebAppMVC\\Repositorio\\UsuarioRepositorio.cs",
-              "RelativeDocumentMoniker": "Repositorio\\UsuarioRepositorio.cs",
-              "ToolTip": "C:\\WebAppMVC\\Repositorio\\UsuarioRepositorio.cs",
-              "RelativeToolTip": "Repositorio\\UsuarioRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:37:09.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\WebAppMVC\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\WebAppMVC\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:27:02.214Z",
+              "WhenOpened": "2025-05-18T17:49:10.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\WebAppMVC\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\WebAppMVC\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T05:17:39.579Z",
+              "DocumentIndex": 3,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\WebAppMVC\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Models\\UsuarioModel.cs",
+              "ToolTip": "C:\\WebAppMVC\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "Models\\UsuarioModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T17:07:17.613Z",
               "EditorCaption": ""
             }
           ]

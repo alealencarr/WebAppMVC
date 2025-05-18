@@ -10,11 +10,13 @@ namespace WebAppMVC.Controllers
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
         private readonly ISessao _sessao;
+        private readonly IEmail _email;
 
-        public LoginController(IUsuarioRepositorio usuarioRepositorio, ISessao sessao)
+        public LoginController(IUsuarioRepositorio usuarioRepositorio, ISessao sessao, IEmail email)
         {
             _usuarioRepositorio = usuarioRepositorio;
             _sessao = sessao;
+            _email = email;
         }
 
         public IActionResult Index()
@@ -63,6 +65,56 @@ namespace WebAppMVC.Controllers
                 MessageHelper.SetMessageError(this, $"Erro ao realizar login: {ex.Message}");
                 return View("Index");
             }
+        }
+
+         
+        public IActionResult RedefinirSenha()
+        {
+            return View();
+
+        }
+        [HttpPost]
+        public IActionResult EnviarLinkParaRedefinirSenha(RedefinirSenhaModel redefinirSenhaModel)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return View("Index");
+                }
+
+                var user = _usuarioRepositorio.BuscarPorEmailELogin(redefinirSenhaModel.Email, redefinirSenhaModel.Login);
+
+                if (user is null)
+                {
+                    MessageHelper.SetMessageError(this, $"Dados inválidos, usuário não encontrado.");
+                    return View("Index");
+                }
+
+                string novaSenha = user.GerarNovaSenha();
+
+                bool emailEnviado = _email.Enviar(user.Email, "Sistema de Contatos - Nova Senha", $"Sua nova senha é: {novaSenha}");
+
+                if (emailEnviado)
+                {
+                    _usuarioRepositorio.Alterar(user);
+                    MessageHelper.SetMessageSucess(this, "Enviamos para o seu e-mail cadastrado uma nova senha.");
+                }
+                else
+                {
+                    MessageHelper.SetMessageError(this, $"Não conseguimos enviar sua nova senha para o seu e-mail, por favor, verifique os dados informados e tente novamente");
+                }
+
+
+                return RedirectToAction("Index", "Login");
+
+            }
+            catch (Exception ex)
+            {
+                MessageHelper.SetMessageError(this, $"Ops, não conseguimos redefinir sua senha, tente novamente, detahe do erro: {ex.Message}");
+                return View("Index");
+            }
+
         }
     }
 }

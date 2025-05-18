@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebAppMVC.Filters;
 using WebAppMVC.Models;
 
 namespace WebAppMVC.Controllers
 {
+    [PaginaParaUsuarioLogado]
     public class HomeController : Controller
     {
         //private readonly ILogger<HomeController> _logger;

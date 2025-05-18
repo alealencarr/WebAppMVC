@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using WebAppMVC.Enums;
+using WebAppMVC.Helper;
 
 namespace WebAppMVC.Models
 {
     public class UsuarioModel
     {
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
         [Required(ErrorMessage = "Digite o Nome do usuário")]
         public string Name { get; set; }
@@ -26,6 +28,7 @@ namespace WebAppMVC.Models
 
         public DateTime? DataAlteracao { get; set; }
 
+        [NotMapped]
         public bool IsEdit { get; private set; }
         public void IsEdicao()
         {
@@ -34,7 +37,21 @@ namespace WebAppMVC.Models
 
         public bool SenhaValida(string senha)
         {
-            return Senha == senha;
+
+            return Senha == senha.GerarHash();
+        }
+        public void SetSenhaHash()
+        {
+            Senha = Senha.GerarHash();
+        }
+
+        public string GerarNovaSenha()
+        {
+            string novaSenha = Guid.NewGuid().ToString().Substring(0,8);
+
+            Senha = novaSenha.GerarHash();
+
+            return novaSenha;
         }
     }
 }

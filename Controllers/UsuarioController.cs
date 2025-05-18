@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAppMVC.Filters;
 using WebAppMVC.Models;
 using WebAppMVC.Repositorio;
 using WebAppMVC.Utils;
 
 namespace WebAppMVC.Controllers
 {
+    [PaginaRestritaSomenteAdmin]
+
     public class UsuarioController : Controller
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;

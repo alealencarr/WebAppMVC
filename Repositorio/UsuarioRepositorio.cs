@@ -15,6 +15,8 @@ namespace WebAppMVC.Repositorio
         public UsuarioModel Adicionar(UsuarioModel usuario)
         {
             usuario.DataCadastro = DateTime.Now;
+            usuario.SetSenhaHash();
+
             _bancoContext.Usuarios.Add(usuario);
             _bancoContext.SaveChanges();
             return usuario;
@@ -30,7 +32,7 @@ namespace WebAppMVC.Repositorio
 
         public UsuarioModel Alterar(UsuarioModel usuario)
         {
-            UsuarioModel UsuarioDB = GetById(usuario.Id);
+            UsuarioModel UsuarioDB = GetById(usuario.Id ?? (long)0);
             if (UsuarioDB == null) throw new Exception("Houve um erro na atualização do Usuario.");
 
             UsuarioDB.Name = usuario.Name;
@@ -38,6 +40,7 @@ namespace WebAppMVC.Repositorio
             UsuarioDB.DataAlteracao = DateTime.Now;
             UsuarioDB.Login = usuario.Login;
             UsuarioDB.Perfil = usuario.Perfil;
+            UsuarioDB.Senha = usuario.Senha;
  
             _bancoContext.Usuarios.Update(UsuarioDB);
             _bancoContext.SaveChanges();
@@ -59,6 +62,9 @@ namespace WebAppMVC.Repositorio
             return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
         }
 
-
+        public UsuarioModel BuscarPorEmailELogin(string email, string login)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper() && x.Email.ToUpper() == email.ToUpper());
+        }
     }
 }

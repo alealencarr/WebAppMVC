@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebAppMVC.Data;
+using WebAppMVC.Filters;
 using WebAppMVC.Models;
 using WebAppMVC.Repositorio;
 using WebAppMVC.Utils;
 
 namespace WebAppMVC.Controllers
 {
+    [PaginaParaUsuarioLogado]
+
     public class ContatoController : Controller
     {        
         private readonly IContatoRepositorio _contatoRepositorio;

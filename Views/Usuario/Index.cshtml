@@ -1,9 +1,8 @@
-﻿@model List<ContatoModel>
+﻿@using WebAppMVC.Enums
+@model List<UsuarioModel>
 @{
-    ViewData["Title"] = "Listagem de Contatos";
+    ViewData["Title"] = "Listagem de Usuarios";
 }
-
-
  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
@@ -21,38 +20,43 @@
         </script>
     }
 
-    <h1 class="display-4"  >Listagem de Contatos</h1>
+    <h1 class="display-4"  >Listagem de Usuarios</h1>
     
     <div class="text-center">
-        <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar</a>
+        <a class="btn btn-primary" role="button" asp-controller="Usuario" asp-action="Criar">Adicionar</a>
 
     </div>
     <div id="hiddenApagar"></div>
     <table id="dtgDados" class="table">
         <thead>
             <tr>
+                
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
                 <th scope="col">E-mail</th>
-                <th scope="col">Celular</th>
+                <th scope="col">Login</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Data de Cadastro</th>
                 <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
         @if (Model != null && Model.Any())
         {
-            foreach(ContatoModel contato in Model)
+            foreach(UsuarioModel Usuario in Model)
             {
             
                     <tr>
-                        <th scope="row">@contato.Id</th>
-                        <td>@contato.Nome</td>
-                        <td>@contato.Email</td>
-                        <td>@contato.Celular</td>
+                        <th scope="row">@Usuario.Id</th>
+                        <td>@Usuario.Name</td>
+                        <td>@Usuario.Email</td>
+                        <td>@Usuario.Login</td>
+                        <td>@(@Usuario.Perfil == @PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
+                        <td>@Usuario.DataCadastro</td>
                         <td>
                             <div class="btn-group" role="group" >
-                                <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id">Editar</a>
-                                <button role="button" class="btn btn-danger" onclick="javascript:abrirPopupContato(@contato.Id,'@contato.Nome', 'Contato');">Apagar</button>
+                                <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar" asp-route-id="@Usuario.Id">Editar</a>
+                                <button role="button" class="btn btn-danger" onclick="javascript:abrirPopupUsuario(@Usuario.Id,'@Usuario.Name', 'Usuario');">Apagar</button>
                             
                             </div>
                         </td>
@@ -63,7 +67,7 @@
             else
             {
                 <tr class="odd">
-                    <td valign="top" colspan="5">Nenhum contato encontrado</td>
+                    <td valign="top" colspan="7">Nenhum Usuario encontrado</td>
                 </tr>
             }
         </tbody>

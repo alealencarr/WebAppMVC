@@ -1,0 +1,54 @@
+﻿@using WebAppMVC.Enums
+@model UsuarioModel
+
+<form asp-controller="@ViewData["Controller"]" asp-action="@ViewData["Action"]" method="post">
+    <input type="hidden" name="id" asp-for="Id" />
+
+
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" asp-for="Name" class="form-control" placeholder="Digite o nome do usuario"  >
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" asp-for="Email" class="form-control" placeholder="Digite o e-mail do usuario">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+
+    <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Digite o login do usuario" >
+        @Html.ValidationMessageFor(x => x.Login)
+    </div>
+
+
+    <div class="form-group">
+        <label for="perfil">Perfil</label>
+        <select asp-for="Perfil" class="form-control">
+            <option value="">- Selecione -</option>
+            <option value="@PerfilEnum.Admin">Administrador</option>
+            <option value="@PerfilEnum.Padrao">Padrão</option>
+
+        </select>
+        @Html.ValidationMessageFor(x => x.Perfil)
+    </div>
+
+    @if(!Model.IsEdit)
+    {
+    <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" asp-for="Senha" class="form-control" placeholder="Digite a senha do usuario">
+        @Html.ValidationMessageFor(x => x.Senha)
+    </div>
+    }
+
+    <br />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-secondary" role="button" asp-controller="usuario" asp-action="index">Voltar</a>
+    </div>
+</form>
+

@@ -89,7 +89,7 @@ namespace WebAppMVC.Controllers
             }
             catch (Exception ex)
             {
-                MessageHelper.SetMessageError(this, "Erro ao realizar alteraçao:" + ex.Message);
+                MessageHelper.SetMessageError(this, "Erro ao realizar inclusão:" + ex.Message);
                 return View(contato);
             }
         }

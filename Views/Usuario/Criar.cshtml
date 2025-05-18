@@ -1,0 +1,12 @@
+﻿@model ContatoModel
+
+@{
+    ViewData["Action"] = "Criar";
+    ViewData["Controller"] = "Usuario";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Contato</h1>
+</div>
+
+@Html.Partial("Forms", Model)

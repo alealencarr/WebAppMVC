@@ -2,11 +2,11 @@
 <div class="modal fade" id="popUpApagar" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content p-3">
-            <form asp-controller="Contato" asp-action="Apagar" method="post">
+            <form  id="formApagar"  method="post">
                 <input type="hidden" name="id" id="idParaExcluir" />
 
                 <div class="modal-header">
-                    <h5 class="modal-title">Apagar Contato</h5>
+                    <h5 class="modal-title" id="texto_popup"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 

@@ -1,0 +1,11 @@
+﻿@model UsuarioModel
+@{
+    ViewData["Action"] = "Editar";
+    ViewData["Controller"] = "Usuario";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editar Usuário</h1>
+</div>
+
+@Html.Partial("Forms", Model)

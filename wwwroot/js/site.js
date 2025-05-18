@@ -71,7 +71,41 @@ $(document).ready(function () {
                 "sSortDescending": ": Ordenar colunas de forma descendente"
             }
         }
+        columnDefs: [
+            {
+                defaultContent: "-",
+                targets:"_all"
+            }
+        ]
     });
 });
+function abrirPopupUsuario(id, nome, controller) {
 
+    document.getElementById('input_texto_contato').textContent = "Deseja realmente apagar o Usuario (" + nome + ")?";
+    document.getElementById('texto_popup').textContent = "Apagar Usuario";
+
+    abrirPopup(id, nome, controller);
+}
+function abrirPopupContato(id, nome, controller) {
+
+    document.getElementById('input_texto_contato').textContent = "Deseja realmente apagar o contato (" + nome + ")?";
+    document.getElementById('texto_popup').textContent = "Apagar Contato";
+ 
+    abrirPopup(id, nome, controller);
+}
+function abrirPopup(id, nome, controller) {
+    document.getElementById('idParaExcluir').value = id;
+    const form = document.getElementById('formApagar');
+    form.setAttribute("action", `${controller}/Apagar`);
+
+    $('#popUpApagar').modal('show');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('hide.bs.modal', function (event) {
+        if (document.activeElement) {
+            document.activeElement.blur();
+        }
+    });
+});
 

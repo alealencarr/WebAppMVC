@@ -1,0 +1,11 @@
+﻿@if (TempData["MessageText"] != null)
+{
+    var msg = TempData["MessageText"];
+    var type = TempData["MessageType"];
+
+    <script>
+        window.onload = function () {
+            ModalDialog('@type', '@msg');
+        };
+    </script>
+}

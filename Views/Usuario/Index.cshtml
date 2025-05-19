@@ -7,18 +7,7 @@
 
 
 <div class="text-center">
-
-    @if (TempData["MessageText"] != null)
-    {
-        var msg = TempData["MessageText"];
-        var type = TempData["MessageType"];
-
-        <script>
-            window.onload = function () {
-                ModalDialog('@type', '@msg');
-            };
-        </script>
-    }
+     @await Component.InvokeAsync("Message")
 
     <h1 class="display-4"  >Listagem de Usuarios</h1>
     
@@ -36,6 +25,7 @@
                 <th scope="col">E-mail</th>
                 <th scope="col">Login</th>
                 <th scope="col">Perfil</th>
+                <th scope="col">Total de Contatos</th>
                 <th scope="col">Data de Cadastro</th>
                 <th scope="col">Ações</th>
             </tr>
@@ -43,35 +33,54 @@
         <tbody>
         @if (Model != null && Model.Any())
         {
-            foreach(UsuarioModel Usuario in Model)
+            foreach(UsuarioModel user in Model)
             {
-            
                     <tr>
-                        <th scope="row">@Usuario.Id</th>
-                        <td>@Usuario.Name</td>
-                        <td>@Usuario.Email</td>
-                        <td>@Usuario.Login</td>
-                        <td>@(@Usuario.Perfil == @PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
-                        <td>@Usuario.DataCadastro</td>
+                        <th scope="row">@user.Id</th>
+                        <td>@user.Name</td>
+                        <td>@user.Email</td>
+                        <td>@user.Login</td>
+                        <td>@(@user.Perfil == @PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
+                        <td>
+                            <a href="javascript:" usuario-id="@user.Id" class="btn btn-success btn-sm btn-total-contatos">
+                                @(user.Contatos is not null && user.Contatos.Any() ? user.Contatos.Count : 0)
+
+                            </a>
+                        </td>
+                        <td>@user.DataCadastro</td>
                         <td>
                             <div class="btn-group" role="group" >
-                                <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar" asp-route-id="@Usuario.Id">Editar</a>
-                                <button role="button" class="btn btn-danger" onclick="javascript:abrirPopupUsuario(@Usuario.Id,'@Usuario.Name', 'Usuario');">Apagar</button>
+                                <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar" asp-route-id="@user.Id">Editar</a>
+                                <button role="button" class="btn btn-danger" onclick="javascript:abrirPopupUsuario(@user.Id,'@user.Name', 'Usuario');">Apagar</button>
                             
                             </div>
                         </td>
                     </tr>
-
                 }
             }
             else
             {
                 <tr class="odd">
-                    <td valign="top" colspan="7">Nenhum Usuario encontrado</td>
+                    <td valign="top" colspan="8">Nenhum Usuario encontrado</td>
                 </tr>
             }
         </tbody>
     </table>
+
+    <div id="modalContatosUsuario" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Listagem de Contatos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="listaContatosUsuario"></div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
 </div>
 
 @Html.Partial("_popUpApagar")

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebAppMVC.Data;
 using WebAppMVC.Filters;
+using WebAppMVC.Helper;
 using WebAppMVC.Models;
 using WebAppMVC.Repositorio;
 using WebAppMVC.Utils;
@@ -12,13 +13,18 @@ namespace WebAppMVC.Controllers
     public class ContatoController : Controller
     {        
         private readonly IContatoRepositorio _contatoRepositorio;
-        public ContatoController(IContatoRepositorio contatoRepositorio)
+        private readonly ISessao _sessao;
+        private readonly UsuarioModel _usuarioModel;
+        public ContatoController(IContatoRepositorio contatoRepositorio, ISessao sessao )
         {
             _contatoRepositorio = contatoRepositorio;
+            _sessao = sessao;
+            _usuarioModel = _sessao.GetSessaoUsuario();
         }
         public IActionResult Index()
         {
-            var allContacts = _contatoRepositorio.GetAllContacts();
+ 
+            var allContacts = _contatoRepositorio.GetAllContacts(_usuarioModel.Id);
             return View(allContacts);
         }
 
@@ -42,8 +48,8 @@ namespace WebAppMVC.Controllers
                 if (!ModelState.IsValid)
                 {
                     return View(contato);
-                }                
-
+                }
+                contato.UsuarioId = _usuarioModel.Id;
                 _contatoRepositorio.Alterar(contato);
                 
                 MessageHelper.SetMessageSucess(this, "Alteração realizada com sucesso!");
@@ -85,7 +91,7 @@ namespace WebAppMVC.Controllers
                 {
                     return View(contato);
                 }
-
+                contato.UsuarioId = _usuarioModel.Id;
                 _contatoRepositorio.Adicionar(contato);
                 MessageHelper.SetMessageSucess(this, "Inclusão realizada com sucesso!");
                 return RedirectToAction("Index");

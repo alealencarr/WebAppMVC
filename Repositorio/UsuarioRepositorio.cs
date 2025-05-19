@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebAppMVC.Data;
+using WebAppMVC.Helper;
 using WebAppMVC.Models;
 
 namespace WebAppMVC.Repositorio
@@ -32,7 +33,7 @@ namespace WebAppMVC.Repositorio
 
         public UsuarioModel Alterar(UsuarioModel usuario)
         {
-            UsuarioModel UsuarioDB = GetById(usuario.Id ?? (long)0);
+            UsuarioModel UsuarioDB = GetById(usuario.Id);
             if (UsuarioDB == null) throw new Exception("Houve um erro na atualização do Usuario.");
 
             UsuarioDB.Name = usuario.Name;
@@ -49,7 +50,9 @@ namespace WebAppMVC.Repositorio
 
         public List<UsuarioModel> GetAllUsers()
         {
-            return _bancoContext.Usuarios.ToList();
+            return _bancoContext.Usuarios
+                .Include(x => x.Contatos)
+                .ToList();
         }
 
         public UsuarioModel GetById(long id)
@@ -65,6 +68,19 @@ namespace WebAppMVC.Repositorio
         public UsuarioModel BuscarPorEmailELogin(string email, string login)
         {
             return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper() && x.Email.ToUpper() == email.ToUpper());
+        }
+
+        public UsuarioModel AlterarSenha(AlterarSenhaModel alterarSenha)
+        {
+            UsuarioModel usuarioDB = GetById(alterarSenha.Id);
+
+            if (usuarioDB is null) throw new Exception("Houve um erro na atualização da senha, usuário não encontrado.");
+
+            if (!usuarioDB.SenhaValida(alterarSenha.SenhaAtual)) throw new Exception("Senha atual não confere.");
+
+            usuarioDB.Senha = alterarSenha.NovaSenha.GerarHash();
+            Alterar(usuarioDB);
+            return usuarioDB;
         }
     }
 }

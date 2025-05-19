@@ -13,6 +13,8 @@ namespace WebAppMVC.Repositorio
         UsuarioModel Alterar(UsuarioModel Usuario);
         List<UsuarioModel> GetAllUsers();
 
+        UsuarioModel AlterarSenha(AlterarSenhaModel alterarSenha);
+
         UsuarioModel GetById(long id);
     }
 }

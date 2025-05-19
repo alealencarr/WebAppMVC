@@ -44,7 +44,28 @@ function ModalDialog(type, text) {
 }
 
 $(document).ready(function () {
-    $('#dtgDados').DataTable({
+    getDataTable('#dtgDados');
+
+    $('.btn-total-contatos').click(function () {
+        var userId = $(this).attr('usuario-id');
+
+        $.ajax({
+            type:'GET',
+            url: '/Usuario/ListarContatosPorUsuarioId/' + userId,
+            success: function (result) {
+                $('#listaContatosUsuario').html(result);
+                $('#modalContatosUsuario').modal('show');
+                getDataTable('#contatos-user');
+            }
+        });
+
+
+        
+    });
+});
+
+function getDataTable(id) {
+    $(id).DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,
@@ -74,11 +95,11 @@ $(document).ready(function () {
         columnDefs: [
             {
                 defaultContent: "-",
-                targets:"_all"
+                targets: "_all"
             }
         ]
     });
-});
+}
 function abrirPopupUsuario(id, nome, controller) {
 
     document.getElementById('input_texto_contato').textContent = "Deseja realmente apagar o Usuario (" + nome + ")?";

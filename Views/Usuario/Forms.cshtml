@@ -2,7 +2,10 @@
 @model UsuarioModel
 
 <form asp-controller="@ViewData["Controller"]" asp-action="@ViewData["Action"]" method="post">
-    <input type="hidden" name="id" asp-for="Id" />
+    @if (Model is not null && Model.Id > 0)
+    {
+        <input type="hidden" name="id" asp-for="Id" />
+    }
 
 
     <div class="form-group">

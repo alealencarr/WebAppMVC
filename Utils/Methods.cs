@@ -4,31 +4,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebAppMVC.Utils
 {
-    public static class Methods
-    {
-        private static string _message;
-        public enum ETipeMessage
-        {
-            Sucess = 1,
-            Error = 2
-        }
-        private static void ClientMessage(ETipeMessage tipo)
-        { 
-     
-        }
-
-        public static void ClientMessageError(string message)
-        {
-            _message = message; 
-            ClientMessage(ETipeMessage.Error);
-        }
-
-        public static void ClientMessageSucess(string message)
-        {
-            _message = message;
-            ClientMessage(ETipeMessage.Sucess);
-        }
-    }
+ 
 
     public static class MessageHelper
     {

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using WebAppMVC.Enums;
 using WebAppMVC.Helper;
@@ -7,7 +8,8 @@ namespace WebAppMVC.Models
 {
     public class UsuarioModel
     {
-        public long? Id { get; set; }
+ 
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Digite o Nome do usuário")]
         public string Name { get; set; }
@@ -27,6 +29,8 @@ namespace WebAppMVC.Models
         public DateTime DataCadastro { get; set; }
 
         public DateTime? DataAlteracao { get; set; }
+
+        public virtual List<ContatoModel>? Contatos { get; set; }
 
         [NotMapped]
         public bool IsEdit { get; private set; }

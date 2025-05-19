@@ -28,7 +28,7 @@ namespace WebAppMVC.Repositorio
 
         public ContatoModel Alterar(ContatoModel contato)
         {
-            ContatoModel contatoDB = GetById(contato.Id ?? 0);
+            ContatoModel contatoDB = GetById(contato.Id);
             if (contatoDB == null) throw new Exception("Houve um erro na atualização do contato.");
 
             contatoDB.Nome = contato.Nome;
@@ -40,9 +40,11 @@ namespace WebAppMVC.Repositorio
             return contatoDB;
         }
 
-        public List<ContatoModel> GetAllContacts()
+        public List<ContatoModel> GetAllContacts(int userId)
         {
-            return _bancoContext.Contatos.ToList();
+            return _bancoContext.Contatos.Where(x => x.UsuarioId == userId).ToList();
+
+            
         }
 
         public ContatoModel GetById(int id)

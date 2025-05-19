@@ -1,0 +1,11 @@
+﻿@model AlterarSenhaModel
+@{
+    ViewData["Action"] = "Alterar";
+    ViewData["Controller"] = "AlterarSenha";
+}
+@await Component.InvokeAsync("Message")
+<div class="text-center">
+    <h1 class="display-4">Alterar Senha do Usuário</h1>
+</div>
+
+@Html.Partial("Forms", Model)

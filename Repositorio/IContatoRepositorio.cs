@@ -8,7 +8,7 @@ namespace WebAppMVC.Repositorio
         void Apagar(int id);
 
         ContatoModel Alterar(ContatoModel contato);
-        List<ContatoModel> GetAllContacts();
+        List<ContatoModel> GetAllContacts(int userId);
 
         ContatoModel GetById(int id);
     }

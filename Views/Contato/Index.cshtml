@@ -9,17 +9,8 @@
 
 <div class="text-center">
 
-    @if (TempData["MessageText"] != null)
-    {
-        var msg = TempData["MessageText"];
-        var type = TempData["MessageType"];
+   @await Component.InvokeAsync("Message")
 
-        <script>
-            window.onload = function () {
-                ModalDialog('@type', '@msg');
-            };
-        </script>
-    }
 
     <h1 class="display-4"  >Listagem de Contatos</h1>
     

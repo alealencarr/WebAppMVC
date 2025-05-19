@@ -43,7 +43,7 @@ Este projeto é um sistema de controle de contatos desenvolvido em .NET Core, ut
 1. Clone o repositório:
 
    ```bash
-   git clone <URL do repositório>
+   git clone <[URL do repositório](https://github.com/alealencarr/WebAppMVC.git)>
    ```
 
 2. Configure as user-secrets:
